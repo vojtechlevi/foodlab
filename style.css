@@ -5,11 +5,22 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: black;
+  color: #fff;
+}
+
 @font-face {
   font-family: neon;
   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
 }
 
+
+#header {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
 
 #header::before {
   content: "";
@@ -25,11 +36,7 @@
   opacity: 0.4;
 }
 
-#header {
-  background-color: black;
-  width: 100%;
-  height: 100vh;
-}
+
 
 .nav {
   position: relative;
@@ -61,17 +68,20 @@
 
 .neon {
   position: relative;
-  z-index: 1;
   font-family: neon;
-  color: #fb4264;
   font-size: 100px;
-  text-shadow: 0 0 3vw #f40a35;
+  text-shadow: 0 0 3rem #fa1c16, 0 0 3rem #fa1c16, 0 0 10px #fa1c16,
+    0 0 10rem #fa1c16, 0 0 0.4rem #28fe5d, 0.1rem 0.1rem 0.1rem #806914;
+  color: #fed128;
 }
 
 .flux {
   position: relative;
   font-family: neon;
   font-size: 100px;
+  text-shadow: 0 0 3rem #10ff58, 0 0 3rem #10ff58, 0 0 10px #10ff58,
+    0 0 10rem #10ff58, 0 0 0.4rem #8bfea8, 0.1rem 0.1rem 0.1rem #14801d;
+  color: #b7f3c4;
 
 }
 
@@ -81,41 +91,6 @@
   font-size: 30px;
   margin-top: 5rem;
 }
-
-.neon {
-  animation: neon 1s ease infinite;
-  -moz-animation: neon 1s ease infinite;
-  -webkit-animation: neon 3s ease infinite;
-
-}
-
-@-webkit-keyframes neon {
-
-  0%,
-  100% {
-    text-shadow: 0 0 3rem #fa1c16, 0 0 3rem #fa1c16, 0 0 10px #fa1c16,
-      0 0 10rem #fa1c16, 0 0 0.4rem #28fe5d, 0.1rem 0.1rem 0.1rem #806914;
-    color: #fed128;
-  }
-}
-
-.flux {
-  animation: flux 2s linear infinite;
-  -moz-animation: flux 2s linear infinite;
-  -webkit-animation: flux 2s linear infinite;
-  -o-animation: flux 2s linear infinite;
-}
-
-@-webkit-keyframes flux {
-
-  0%,
-  100% {
-    text-shadow: 0 0 3rem #10ff58, 0 0 3rem #10ff58, 0 0 10px #10ff58,
-      0 0 10rem #10ff58, 0 0 0.4rem #8bfea8, 0.1rem 0.1rem 0.1rem #14801d;
-    color: #b7f3c4;
-  }
-}
-
 
 @media only screen and (max-width: 600px) {
 
