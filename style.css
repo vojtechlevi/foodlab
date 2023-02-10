@@ -37,12 +37,13 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
 }
 
 .nav ul li {
 
   display: inline-block;
-  margin: 10px 15px;
+  margin: 40px 15px;
 
 }
 
@@ -55,7 +56,7 @@
 
 .header-text {
   text-align: center;
-  margin-top: 25vh;
+  margin-top: 20vh;
 }
 
 .neon {
@@ -79,7 +80,6 @@
   justify-content: center;
   font-size: 30px;
   margin-top: 5rem;
-
 }
 
 .neon {
@@ -119,13 +119,13 @@
 
 @media only screen and (max-width: 600px) {
 
-  .neon {
+  .neon,
+  .flux {
     font-size: 50px;
 
   }
 
-  .flux {
-    font-size: 50px;
-
+  .link {
+    font-size: 30px;
   }
 }
