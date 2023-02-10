@@ -86,9 +86,10 @@
   animation: neon 1s ease infinite;
   -moz-animation: neon 1s ease infinite;
   -webkit-animation: neon 3s ease infinite;
+
 }
 
-@keyframes neon {
+@-webkit-keyframes neon {
 
   0%,
   100% {
@@ -111,7 +112,7 @@
   -o-animation: flux 2s linear infinite;
 }
 
-@keyframes flux {
+@-webkit-keyframes flux {
 
   0%,
   100% {
