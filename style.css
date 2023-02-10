@@ -50,7 +50,7 @@ body {
 .nav ul li {
 
   display: inline-block;
-  margin: 40px 15px;
+  margin: 40px 20px;
 
 }
 
@@ -79,7 +79,7 @@ body {
   position: relative;
   font-family: neon;
   font-size: 100px;
-  text-shadow: 0 0 1rem #10ff58, 0 0 2rem #10ff58, 0 0 3rem #10ff58,
+  text-shadow: 0 0 9px #10ff58, 0 0 2px #10ff58, 0 0 60px #10ff58,
     0 0 5rem #10ff58, 0 0 0.8rem #8bfea8, 0.1rem 0.1rem 0.1rem #14801d;
   color: #b7f3c4;
 
