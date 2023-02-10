@@ -8,6 +8,7 @@
 body {
   background-color: black;
   color: #fff;
+
 }
 
 @font-face {
@@ -20,7 +21,7 @@ body {
   background-color: black;
   width: 100%;
   height: 100vh;
-
+  transition: 1.5s ease;
 
 }
 
@@ -73,7 +74,8 @@ body {
   transition: 1.5s ease;
 }
 
-.flux {
+.flux,
+span {
   position: relative;
   font-family: neon;
   font-size: 100px;
@@ -91,11 +93,43 @@ body {
   font-size: 40px;
   margin-top: 7rem;
   transition: 0.3s ease;
+  text-decoration: none;
 }
 
 .link:hover {
   color: #70e78a;
   transform: translateY(-5px);
+}
+
+.flicker-slow {
+  animation: flicker 3s linear infinite;
+}
+
+.flicker-fast {
+  animation: flicker 1s linear infinite;
+}
+
+@keyframes flicker {
+
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
+    opacity: .99;
+  }
+
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    opacity: 0.6;
+  }
 }
 
 @media only screen and (max-width: 600px) {
