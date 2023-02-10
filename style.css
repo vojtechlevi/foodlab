@@ -94,7 +94,7 @@
   0%,
   100% {
     text-shadow: 0 0 3rem #fa1c16, 0 0 3rem #fa1c16, 0 0 10px #fa1c16,
-      0 0 10rem #fa1c16, 0 0 0.4rem #28fe5d, 0.5px 0.5px 0.1rem #806914;
+      0 0 10rem #fa1c16, 0 0 0.4rem #28fe5d, 0.1rem 0.1rem 0.1rem #806914;
     color: #fed128;
   }
 }
@@ -111,13 +111,18 @@
   0%,
   100% {
     text-shadow: 0 0 3rem #10ff58, 0 0 3rem #10ff58, 0 0 10px #10ff58,
-      0 0 10rem #10ff58, 0 0 0.4rem #8bfea8, 0.5px 0.5px 0.1rem #14801d;
+      0 0 10rem #10ff58, 0 0 0.4rem #8bfea8, 0.1rem 0.1rem 0.1rem #14801d;
     color: #b7f3c4;
   }
 }
 
 
 @media only screen and (max-width: 600px) {
+
+
+  #header {
+    height: 100vh;
+  }
 
   .neon,
   .flux {
