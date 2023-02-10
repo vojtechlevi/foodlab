@@ -1,11 +1,8 @@
-html,
-body {
+* {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
-  display: table;
-  background-color: black;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 @font-face {
@@ -13,14 +10,8 @@ body {
   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
 }
 
-.container {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  position: relative;
-}
 
-.container::before {
+#header::before {
   content: "";
   background-image: url(denys-nevozhai-D68ADLeMh5Q-unsplash.jpg);
   background-position: center;
@@ -31,7 +22,40 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: 0.55;
+  opacity: 0.4;
+}
+
+#header {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav ul li {
+
+  display: inline-block;
+  margin: 10px 15px;
+
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+}
+
+.header-text {
+  text-align: center;
+  margin-top: 25vh;
 }
 
 .neon {
@@ -39,17 +63,23 @@ body {
   z-index: 1;
   font-family: neon;
   color: #fb4264;
-  font-size: 80px;
-  line-height: 90px;
+  font-size: 100px;
   text-shadow: 0 0 3vw #f40a35;
 }
 
 .flux {
   position: relative;
   font-family: neon;
+  font-size: 5rem;
+  line-height: 4rem;
+}
 
-  font-size: 100px;
-  line-height: 120px;
+.link {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin-top: 5rem;
+
 }
 
 .neon {
@@ -59,12 +89,14 @@ body {
 }
 
 @keyframes neon {
+
   0%,
   100% {
-    text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16,
-      0 0 10vw #fa1c16, 0 0 0.4vw #28fe5d, 0.5vw 0.5vw 0.1vw #806914;
+    text-shadow: 0 0 3rem #fa1c16, 0 0 3rem #fa1c16, 0 0 10px #fa1c16,
+      0 0 10rem #fa1c16, 0 0 0.4rem #28fe5d, 0.5px 0.5px 0.1rem #806914;
     color: #fed128;
   }
+
   /* 50% {
     text-shadow: 0 0 0.5vw #800e0b, 0 0 1.5vw #800e0b, 0 0 5vw #800e0b,
       0 0 5vw #800e0b, 0 0 0.2vw #800e0b, 0.5vw 0.5vw 0.1vw #40340a;
@@ -80,12 +112,14 @@ body {
 }
 
 @keyframes flux {
+
   0%,
   100% {
-    text-shadow: 0 0 1vw #10ff58, 0 0 3vw #10ff58, 0 0 10vw #10ff58,
-      0 0 10vw #10ff58, 0 0 0.4vw #8bfea8, 0.5vw 0.5vw 0.1vw #14801d;
+    text-shadow: 0 0 3rem #10ff58, 0 0 3rem #10ff58, 0 0 10px #10ff58,
+      0 0 10rem #10ff58, 0 0 0.4rem #8bfea8, 0.5px 0.5px 0.1rem #14801d;
     color: #b7f3c4;
   }
+
   /* 50% {
     text-shadow: 0 0 0.5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180,
       0 0 5vw #082180, 0 0 0.2vw #082180, 0.5vw 0.5vw 0.1vw #0a3940;
